@@ -8,13 +8,8 @@
     var g = 255;
     var b = 255;
     
-    
-    
     function buttonpress(){
-      document.body.style.backgroundColor="rgb(255,0,0)";
-    
-      
-    
+      document.body.style.backgroundColor="rgb(255,0,0)";  
   }
   function  sliderChange(){
   document.body.style.backgroundColor = ("rgb("+r+","+g+","+b+")")
@@ -41,7 +36,7 @@
 <p>
 <a href="index.html"> Go Back to the home Page </a>
 <button onclick="buttonpress()">Feed the Owl</button><br>
-  .
+  
 <input type="range" id = "slider" min="0" max="255" onchange="sliderChangeR(this.value)"/> <br>
 <input type="range" id = "slider" min="0" max="255" onchange="sliderChangeG(this.value)"/> <br>
 <input type="range" id = "slider" min="0" max="255" onchange="sliderChangeB(this.value)"/> <br>
