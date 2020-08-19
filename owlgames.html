@@ -9,12 +9,19 @@
     var b = 255:
     
     
+    
     function buttonpress(){
       document.body.style.backgroundColor="rgb(255,0,0)";
-    }
+    
+      
+    
+  }
+  function  sliderChange(){
+  document.body.style.backgroundColor = ("rgb("+r+","+g+","+b+")")
+  }
   function sliderChangeR(val){
     r = val;
-    sliderChange("rgb("+r+","+g+","+b+")");
+    sliderChange();
   }
   function sliderChangeG(val){
     g = val;
@@ -23,7 +30,7 @@
   function sliderChangeB(val){
     b = val;
     sliderChange();
-  
+  }
       
   </script>
   <b> Owl Games Super Fun! </b>
