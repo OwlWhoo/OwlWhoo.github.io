@@ -30,6 +30,31 @@
   
   var x = 50;
   var y = 50;
- </script>
-</body>
+ 
+  var canvas = document.getElementById('game');
+      canvas.width = window.innerwidth;
+      canvas.height = window.innerheight;
+      
+  var ctx = canvas.gerContext('2d');
+      
+  var speed = 3;
+      
+  function draw() {
+    //Clear screen
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    
+    var charecter = new Path2D();
+    charecter.arc(x,y,25,0,2 * Math.PI);
+    
+    ctx.fill(character);
+  }
+  
+    setInterval(draw,10);
+  </script>
+ </body>
+</html>
+    
+    
+
+
  
