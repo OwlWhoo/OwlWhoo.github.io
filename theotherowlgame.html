@@ -13,15 +13,15 @@
     DOWN: 40,
     
     isDown: function(keyCode) {
-      return this._pressed[keyCode] = true;
+      return this._pressed[keyCode];
     },
     
     onKeydown: function(event) {
-    this._pressed[event.keyCode];
+    this._pressed[event.keyCode]= true;
     };
     
     onKeyup: function(event) {
-      delete this._pressed[event.keyCode] = true;
+      delete this._pressed[event.keyCode] 
     }
   };
   
