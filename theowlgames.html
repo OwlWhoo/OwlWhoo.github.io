@@ -57,7 +57,7 @@ var myGameArea = {
                             if(this.type=="text"){
                                     ctx.font = this.width+""+this.height;
                                     ctx.fillStyle = color;
-                                    ctx.fillRect(this.text,this.y,this.width,this.height);
+                                    ctx.fillRect(this.text,this.y,this.x);
                   }else{
                                     ctx.fillStyle = color;
                                     ctx.fillRect(this.x,this.y,this.width,this.height);
