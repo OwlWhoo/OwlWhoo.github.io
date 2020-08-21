@@ -44,15 +44,17 @@
     ctx.clearRect(0,0,canvas.width,canvas.height);
     
     if(KEY.isDown(KEY.UP)){
-      y-=speed;
-    }
-    else if(KEY.isDown(Key,DOWN)){
-      y+=speed;
-      
-    if(Key.isDown(Key.LEFT)){
       x-=speed;
     }
+    else if(KEY.isDown(Key,DOWN)){
+      x+=speed;
+      
+    if(Key.isDown(Key.LEFT)){
+      y-=speed;
+    }
     else if(Key.isDown(Key.RIGHT)){
+     y+=speed;
+      
     var character = new Path2D();
     character.arc(x,y,25,0,2 * Math.PI);
     
