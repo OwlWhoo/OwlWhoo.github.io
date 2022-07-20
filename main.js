@@ -23,7 +23,7 @@ function draw(){
     stroke(255);
     strokeWeight(3);
     rect(10,10,100,20);
-    fill(10,10,100,20);
+    fill(0,255,0);
     strokeWeight(0);
     rect(10,10, player.hp * 0.98,18);
     if (keysPressed["ArrowRight"]){
