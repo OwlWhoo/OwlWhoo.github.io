@@ -17,7 +17,7 @@ function setup(){
 }
 function draw(){
   if(GAMEOVER == 0){
-    //background(0);
+    background(255);
     image(playerImage, player.x, player.y);
     noFill();
     stroke(255);
