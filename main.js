@@ -27,12 +27,12 @@ function draw(){
     strokeWeight(0);
     rect(10,10, player.hp * 0.98,18);
     if (keysPressed["ArrowRight"]){
-        player.xVe1  +=1;
+        player.xVel  +=1;
     }else if (keysPressed["ArrowLeft"]){
-        player.xVe1 -=1;
+        player.xVel -=1;
     }
-    player.xVe1 *= 0.9;
-    player.x += player.xVe1;
+    player.xVel *= 0.9;
+    player.x += player.xVel;
   }
 }
 function keyPressed(){
