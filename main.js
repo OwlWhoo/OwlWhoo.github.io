@@ -32,7 +32,9 @@ function draw(){
         player.xVel -=1;
     }
     player.xVel *= 0.9;
-    player.x += player.xVel;
+    if (x<1000||x>1) {
+      player.x += player.xVel;
+    }
   }
 }
 function keyPressed(){
