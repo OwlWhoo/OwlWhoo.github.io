@@ -32,7 +32,7 @@ function draw(){
         player.xVel -=1;
     }
     player.xVel *= 0.9;
-    if (x<1000||x>1) {
+    if (player.x<1000 && player.x>1) {
       player.x += player.xVel;
     }
   }
