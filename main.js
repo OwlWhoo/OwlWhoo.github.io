@@ -33,8 +33,8 @@ function draw(){
     }
     player.xVe1 *= 0.9;
     player.x += player.xVe1;
+  }
 }
-
 function keyPressed(){
     keysPressed[key] = true;
 }
