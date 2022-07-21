@@ -2,7 +2,7 @@ let playerImage;
 let GAMEOVER = 0;
 
 let berryImage
-let berryChange = 0.02;
+let berryChance = 0.02;
 
 let berries = [{
   x:500,
