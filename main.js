@@ -54,10 +54,17 @@ function draw(){
       berry.y += berry.yVel;
     
     })
+  
+    berries.forEach((berry,i) =>{
+        if(berry.y > height){
+            berries.splice(i,1);
+        }
+    })
   }
 }
- function keyPressed(){
- keysPressed[key] = true;
+
+function keyPressed(){
+keysPressed[key] = true;
 }
 
 function keyReleased(){
