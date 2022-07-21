@@ -64,11 +64,6 @@ function keyReleased(){
     keysPressed[key] = false;
 }
 
-Andrew Sabatino
-10:00 AM (2 minutes ago)
-
-to me
-
 function overlappingRects(x1, y1, w1, h1, x2, y2, w2, h2) {
     
     if ((x1<=x2 && x2<=x1+w1)&&(y1<=y2 && y2<=y1+h1)){
