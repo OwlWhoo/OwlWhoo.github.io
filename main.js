@@ -48,7 +48,7 @@ function draw(){
     }
  
     berries.forEach(berry =>{
-        image(berryImage,berry.x, berry.y, 48,48);
+        image(berryImage,berry.x, berry.y, 27,27);
         noFill();
         berry.yVel += 0.25;
       berry.y += berry.yVel;
