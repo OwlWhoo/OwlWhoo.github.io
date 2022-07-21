@@ -2,14 +2,23 @@ let playerImage;
 let GAMEOVER = 0;
 
 let berryImage
-let berryChance = 0.25;
+let berryChance = 0.05;
+
+let leafImage
+let leafChance = 0.008;
 
 let berries = [{
   x:500,
   y:0,
   yVel:0
 }];
-  
+
+let leaves = [{
+  x:500,
+  y:0,
+  yVel:0
+}]; 
+
 let player = {
   x:500,
   y:550,
@@ -21,6 +30,7 @@ let keysPressed = {};
 function preload(){
   playerImage = loadImage("wooper.png");
   berryImage = loadImage("berry.png");
+  leafImage = loadImage("Leaf.png");
 }
 
 function setup(){
@@ -63,6 +73,28 @@ function draw(){
     
     if(Math.random()<berryChance){
         berries.push({
+            x: random(1000),
+            y: 0,
+          yVel : 0
+        })
+    }
+    
+    leaves.forEach(leaf =>{
+        image(leafImage,leaf.x, leaf.y, 27,27);
+        noFill();
+        leaf.yVel += 0.25;
+      leaf.y += leaf.yVel;
+    
+    })
+  
+    leaves.forEach((leaf,i) =>{
+        if(leaf.y > height){
+            leaves.splice(i,1);
+        }
+    })
+    
+    if(Math.random()<leafChance){
+        leaves.push({
             x: random(1000),
             y: 0,
           yVel : 0
