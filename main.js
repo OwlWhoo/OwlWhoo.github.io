@@ -60,9 +60,17 @@ function draw(){
             berries.splice(i,1);
         }
     })
+    
+    if(Math.random()<berryChance){
+        berries.push({
+            x: random(1000),
+            y: 0,
+          yVel : 0
+        })
+    }
   }
 }
-
+  
 function keyPressed(){
 keysPressed[key] = true;
 }
