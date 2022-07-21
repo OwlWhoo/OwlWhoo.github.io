@@ -1,5 +1,15 @@
 let playerImage;
 let GAMEOVER = 0;
+
+let berryImage
+let berryChange = 0.02;
+
+let berries = [{
+  x:500,
+  y:0,
+  yVel:0
+}];
+  
 let player = {
   x:500,
   y:550,
@@ -10,6 +20,7 @@ let player = {
 let keysPressed = {};
 function preload(){
   playerImage = loadImage("wooper.png");
+  berryImage = loadImage("berry.png");
 }
 
 function setup(){
@@ -35,10 +46,18 @@ function draw(){
     if (player.x+player.xVel<902 && player.x+player.xVel>1) {
       player.x += player.xVel;
     }
+ 
+    berries.forEach(berry =>{
+        image(berryImage,berry.x, berry.y, 48,48);
+        noFill();
+        berry.yVel += 0.25;
+      berry.y += berry.yVel;
+    
+    })
   }
 }
-function keyPressed(){
-    keysPressed[key] = true;
+ function keyPressed(){
+ keysPressed[key] = true;
 }
 
 function keyReleased(){
