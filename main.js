@@ -5,7 +5,7 @@ let berryImage
 let berryChance = 0.05;
 
 let leafImage
-let leafChance = 0.008;
+let leafChance = 0.012;
 
 let berries = [{
   x:500,
