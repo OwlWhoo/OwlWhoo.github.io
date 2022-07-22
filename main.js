@@ -1,8 +1,6 @@
 let playerImage;
 let GAMEOVER = 0;
-
 let score = 0;
-
 let berryImage
 let berryChance = 0.05;
 
