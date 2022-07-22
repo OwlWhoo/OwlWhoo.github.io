@@ -1,6 +1,8 @@
 let playerImage;
 let GAMEOVER = 0;
 
+let score = 0;
+
 let berryImage
 let berryChance = 0.05;
 
@@ -39,6 +41,10 @@ function setup(){
 function draw(){
   if(GAMEOVER == 0){
     background(255);
+    textSize(32);
+    fill(0,255,0);
+    text(score,900,40);
+    
     image(playerImage, player.x, player.y);
     noFill();
     stroke(255);
