@@ -73,6 +73,12 @@ function draw(){
         if(berry.y > height){
             berries.splice(i,1);
         }
+    let touchingPlayer = overlappingRects(player.x, player.y, playerImage.width, playerImage.height, berry.x, berry.y, berryImage.width, berryImage.height);
+    if(touchingPlayer){
+        score +== 1;
+        berries.splice(i,1);
+    
+    }
     })
     
     if(Math.random()<berryChance){
