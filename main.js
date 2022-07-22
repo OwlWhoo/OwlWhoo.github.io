@@ -5,7 +5,7 @@ let berryImage
 let berryChance = 0.05;
 
 let leafImage
-let leafChance = 0.02;
+let leafChance = 0.025;
 
 let berries = [{
   x:500,
@@ -115,6 +115,10 @@ function draw(){
             y: 0,
           yVel : 0
         })
+    }
+    if (player.hp<=0){
+        GAMEOVER = 1;
+        background(0);
     }
   }
 }
