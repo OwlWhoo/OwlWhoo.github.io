@@ -75,7 +75,7 @@ function draw(){
         }
     let touchingPlayer = overlappingRects(player.x, player.y, playerImage.width, playerImage.height, berry.x, berry.y, berryImage.width, berryImage.height);
     if(touchingPlayer){
-        score +== 1;
+        score += 1;
         berries.splice(i,1);
     
     }
