@@ -103,7 +103,7 @@ function draw(){
         }
         let touchingPlayer = overlappingRects(player.x, player.y, playerImage.width, playerImage.height, leaf.x, leaf.y, leafImage.width,leafImage.height);
         if (touchingPlayer && player.hp>0){
-            player.hp -= .10;
+            player.hp -= 3;
             leaves.splice(i,1);
         }
       
