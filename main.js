@@ -101,6 +101,12 @@ function draw(){
         if(leaf.y > height){
             leaves.splice(i,1);
         }
+        let touchingPlayer = overlappingRects(player.x, player.y, playerImage.width, playerImage.height, leaf.x, leaf.y, leafImage.width,leafImage.height);
+        if (touchingPlayer && player.hp>0){
+            player.hp -= .10;
+            leaves.splice(i,1);
+        }
+      
     })
     
     if(Math.random()<leafChance){
